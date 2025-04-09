@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
 
 * {
     padding: 0px;
@@ -269,8 +269,400 @@ padding: 15px;
     color: white;
 } 
 
+@media screen and (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      max-width: 90vw;
+      padding: 10px;
+    }
+  
+    .hero > :first-child,
+    .hero > :nth-child(2) {
+      font-size: 28px;
+    }
+  
+    .hero > :nth-child(3),
+    .hero > :nth-child(4) {
+      font-size: 14px;
+    }
+  
+    .hero-buttons {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .first {
+      flex-direction: column;
+      max-width: 90vw;
+      text-align: center;
+    }
+  
+    .secImg img,
+    .secImg video {
+      width: 100%;
+    }
+  
+    .faqbox {
+      max-width: 90vw;
+      font-size: 18px;
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .footer {
+      grid-template-columns: 1fr 1fr;
+      max-width: 90vw;
+      gap: 20px;
+    }
+  
+    .main input {
+      width: 100%;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  
+    .btn-red {
+      width: 100%;
+      font-size: 16px;
+      padding: 10px 20px;
+    }
+  }
+   */
 
 
 
 
 
+
+
+
+   @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("bg.jpg");
+    height: 70vh;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+}
+
+.main .box {
+    opacity: 0.69;
+    height: 70vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-color: black;
+
+}
+
+nav {
+    display: flex;
+    max-width: 50vw;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+}
+
+nav img {
+    width: 114px;
+    position: relative;
+    z-index: 10;
+}
+
+button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100%-62);
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    position: relative;
+    gap: 23px;
+    padding: 0 30px;
+    margin-top: 70px;
+
+}
+
+.hero> :first-child {
+    font-size: 56px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-size: 56px;
+    font-weight: 900;
+    text-align: center;
+
+}
+
+.hero> :nth-child(3) {
+    font-weight: 400px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.hero> :nth-child(4) {
+    font-weight: 400px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.separation {
+    height: 7px;
+    background-color: rgb(65, 65, 65);
+}
+
+.btn {
+    padding: 3px 8px;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    border-radius: 4px;
+    border: 1px solid rgba(241, 237, 237, 0.5);
+    cursor: pointer;
+    border-radius: 28px;
+
+}
+
+.btn-red {
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 15px 50px;
+    font-size: 18px;
+    border-radius: 28px;
+
+}
+
+.btn-red-sm {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 14px;
+    border-radius: 15px;
+
+
+}
+
+.main input {
+    padding: 20px 45px;
+    font-size: 20px;
+    border-radius: 35px;
+    background-color: rgba(23, 23, 23, 0.2);
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    border: 1px solid rgba(241, 237, 237, 0.5);
+
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (max-width=13px){
+    .first{
+        flex-wrap: wrap;
+    }
+}
+.secImg {
+    position: relative;
+}
+
+.secImg img {
+    width: 555px;
+    position: relative;
+    z-index: 10;
+}
+
+.secImg video {
+    position: absolute;
+    top: 51px;
+    right: 0;
+    width: 555px;
+}
+
+section.first>div {
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    display: flex;
+
+}
+
+section.first>div :nth-child(1) {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+
+section.first>div :nth-child(2) {
+    font-size: 24px;
+
+}
+
+.faq {
+    background-color: black;
+    color: white;
+}
+
+.faqbox svg {
+    filter: invert(1);
+
+
+}
+
+.faq h2 {
+    text-align: center;
+    padding: 34px;
+    font-size: 48px;
+    font-weight: bolder;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+}
+
+.faqbox {
+    transition: all 1s ease-out;
+    display: flex;
+    background-color: #2d2d2d;
+    padding: 24px;
+    max-width: 40vw;
+    margin: 34px auto;
+    justify-content: space-between;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bolder;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+}
+
+.faqbox:hover {
+    background-color:  #151313;
+    color: white;
+}
+
+
+footer{
+color: white;
+gap: 30px;
+padding: 15px;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    max-width: 60vw;
+    margin: auto;
+}
+@media screen and (max-width=1300px){
+    
+.footer{
+    display: grid;
+    grid-template-columns:  1fr 1fr ;
+    max-width: 60vw;
+    margin: auto;
+}
+}
+.footer-item{
+
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-item  a{
+    
+    color: white;
+} 
+
+@media screen and (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      max-width: 90vw;
+      padding: 10px;
+    }
+  
+    .hero > :first-child,
+    .hero > :nth-child(2) {
+      font-size: 28px;
+    }
+  
+    .hero > :nth-child(3),
+    .hero > :nth-child(4) {
+      font-size: 14px;
+    }
+  
+    .hero-buttons {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .first {
+      flex-direction: column;
+      max-width: 90vw;
+      text-align: center;
+    }
+  
+    .secImg img,
+    .secImg video {
+      width: 100%;
+    }
+  
+    .faqbox {
+      max-width: 90vw;
+      font-size: 18px;
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .footer {
+      grid-template-columns: 1fr 1fr;
+      max-width: 90vw;
+      gap: 20px;
+    }
+  
+    .main input {
+      width: 100%;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  
+    .btn-red {
+      width: 100%;
+      font-size: 16px;
+      padding: 10px 20px;
+    }
+  }
+  
